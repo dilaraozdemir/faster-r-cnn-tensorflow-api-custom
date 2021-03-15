@@ -41,6 +41,15 @@ Run the code below in models/research/object_detection directory. In the images 
 
     python xml_to_csv.py
 ### Step 3
+Type your classes in the generate_tfrecord.py file as below.
+
+    # TO-DO replace this with label map
+    def class_text_to_int(row_label):
+        if row_label == 'yourclassname':
+            return 1
+        else:
+            None
+
 Run the code below in models/research/object_detection directory. 
 
     python generate_tfrecord.py --csv_input=images\train_labels.csv --image_dir=images\train --output_path=train.record
