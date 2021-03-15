@@ -1,0 +1,10 @@
+tensorflow-gpu==1.15.0
+pillow
+lxml
+jupyter  
+matplotlib
+pandas
+opencv-python
+cython==0.28.1
+tf_slim
+scipy
