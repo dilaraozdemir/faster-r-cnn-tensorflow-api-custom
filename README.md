@@ -63,4 +63,97 @@ Run the code below in models/research/object_detection directory.
 
 ⚠️ **The extension of the labelmap file must be .pbtxt.**
 
- - 
+ - Type your classes and ids in the labelmap.pbtxt file as below:
+```
+item
+ {
+  id: 1
+  name: 'yourclassname'
+ }
+```
+**NOTE** 📝  id = return values, name = name of your class in generate_tfrecord.py
+**NOTE** 📝 Before the training models/research/object_detection/training folder must contain faster_rcnn_inception_v2_pets.config, graph.pbtxt, labelmap.pbtxt
+
+### Step 5
+
+ - Line 9:  # write your class count
+```
+    faster_rcnn {
+	    num_classes: 32
+```
+ 
+ - Line 106: Write your fine_tune_checkpoint
+```
+    fine_tune_checkpoint : "C:/tensorflowapi/models/research/object_detection/faster_rcnn_inception_v2_coco_2018_01_28/model.ckpt"
+```
+ - Line 123: Write your input path of train.record path.
+```
+    input_path: "C:/tensorflowapi/models/research/object_detection/train.record"
+```
+ - Line 125: Write your label map path. 
+```
+    label_map_path: "C:/tensorflowapi/models/research/object_detection/training/labelmap.pbtxt"
+```
+ - Line 130: Write the count of your test images in models/research/images/test folder.
+```
+num_examples: 1
+```
+ - Line 135: Write your input path of test.record path.
+```
+input_path: "C:/tensorflowapi/models/research/object_detection/test.record"
+```
+ - Line 137: Write your label map path.
+```
+label_map_path: "C:/tensorflowapi/models/research/object_detection/training/labelmap.pbtxt"
+```
+
+## Training
+⚠️ **Before the training models/research/object_detection/inference_graph folder must be empty.**
+
+For starting to train, run the command below in models/research/object_detection directory.
+
+    python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/faster_rcnn_inception_v2_pets.config
+
+It will show like the following image.
+
+![image](/images/training.jpg)
+
+## Testing
+### Inference Graph
+⚠️ **Write the number of the last model.ckpt model created in the inference_graph directory in the XXXX part of the command.**
+
+    python export_inference_graph.py --input_type image_tensor --pipeline_config_path training/faster_rcnn_inception_v2_pets.config --trained_checkpoint_prefix training/model.ckpt-XXXX --output_directory inference_graph
+
+**Example:**
+The number of my model, which was formed after the training I did, was "0" as follows.
+![image](/images/inference_graph.jpg)
+
+### Test Image
+### Step 1
+Write the IDLE to your command and you will see screen like in the follow.
+![image](/images/idle.jpg)
+
+### Step 2
+Choose File/Open... from the left corner of the idle. Selec the Object_detection_image.py file in directory models/research/object_detection from the screen that opens.
+
+### Step 3
+There are two options here. You can set the path of the test folder in the object_detection_image.py file, or you can move the image you want to test to the models/research / object_detection directory.
+
+**Hint** 🗝️ Here, the operations are carried out by moving the desired image to the test models / research / object_detection directory.
+
+    IMAGE_NAME = 'yourtestimagename.JPG'
+
+Write the number of classes the object detector can identify.
+
+    NUM_CLASSES = 1
+
+### Step 4
+Press F5 to Run Module.
+
+
+## Maintainers
+
+ - Dilara Özdemir ([@GitHub dilaraozdemir](https://github.com/dilaraozdemir))
+ - Buse Yaren Tekin ([@GitHub buseyarentekin](https://github.com/buseyarentekin))
+ - Elif Meşeci ([@GitHub elifmeseci](https://github.com/elifmeseci))
+ - Süheda Çilek ([@GitHub suhedacilek](https://github.com/suhedacilek))
