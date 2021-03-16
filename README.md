@@ -9,6 +9,7 @@ After cloning this repo, upload from within the requirements.txt file.
     pip install -r requirements.txt
     
 ## Directory
+
 ### Step 1
 Download the Tensorflow model file from the link below. We will do the work in this directory. Upload this repo as .zip and unzipped into the directory where you will be working.
 
