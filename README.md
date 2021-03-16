@@ -1,4 +1,4 @@
-# Faster R-CNN with Tensorflow Object Detection API
+# Faster R-CNN with TensorFlow Object Detection API
 
 ## Creating Anaconda Environment and Requirements
 	conda create -n myenv python=3.6
