@@ -29,7 +29,7 @@ Move the model in the repo, the file faster_rcnn_inception_v2_coco_2018_01_28 to
 >variable: C:\tensorflow\models;C:\tensorflow\models\research;C:\tensorflow\models\research\slim
 
 📣**Way 2:** Set environment in Command Prompt with command below.
-PYTHONPATH=C:\tensorflowapi\models;C:\tensorflowapi\models\research;C:\tensorflowapi\models\research\slim
+>PYTHONPATH=C:\tensorflowapi\models;C:\tensorflowapi\models\research;C:\tensorflowapi\models\research\slim
 
 ### 🐾Step 4  
 Run the following commands in the model/research directory.
