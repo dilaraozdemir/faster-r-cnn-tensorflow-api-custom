@@ -127,7 +127,7 @@ For starting to train, run the command below in models/research/object_detection
 
 It will show like the following image.
 
-![image](/images/training.jpg)
+![image](/images/training.jpg=250x500)
 
 ## 📌Testing
 ### Inference Graph
