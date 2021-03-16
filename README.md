@@ -20,6 +20,8 @@ Download the Tensorflow model file from the link below. We will do the work in t
 ### Step 2
 Move the model in the repo, the file faster_rcnn_inception_v2_coco_2018_01_28 to the models/research/object_detection directory.
 
+**NOTE** 📝 To find the missing files in the object_detection directory, move the missing files models/research/object_detection like in the object_detection.rar 
+
 ### Step 3
 
 Run the following commands in the model/research directory.
