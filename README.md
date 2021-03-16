@@ -2,8 +2,9 @@
 
 ## 📌Creating Anaconda Environment and Requirements
 	conda create -n myenv python=3.6
+	conda install tensorflow-gpu==1.15.0
 	conda install -c anaconda protobuf
-
+	
 After cloning this repo, upload from within the requirements.txt file.
 
     pip install -r requirements.txt
