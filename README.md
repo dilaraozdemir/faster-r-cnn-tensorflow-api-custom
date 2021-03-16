@@ -82,6 +82,7 @@ item
  }
 ```
 **NOTE** 📝  id = return values, name = name of your class in generate_tfrecord.py
+
 **NOTE** 📝 Before the training models/research/object_detection/training folder must contain faster_rcnn_inception_v2_pets.config, graph.pbtxt, labelmap.pbtxt
 
 ### Step 5
