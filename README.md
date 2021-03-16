@@ -23,7 +23,12 @@ Move the model in the repo, the file faster_rcnn_inception_v2_coco_2018_01_28 to
 **NOTE** 📝 To find the missing files in the object_detection directory, move the missing files models/research/object_detection like in the object_detection.rar 
 
 ### Step 3
+Specify pythonpathi in system environment variables. And create new system variable 
+>variable name: PYTHONPATH
+>
+>variable: C:\tensorflow\models;C:\tensorflow\models\research;C:\tensorflow\models\research\slim
 
+### Step 4  
 Run the following commands in the model/research directory.
 
 **NOTE** 📝 Can be duplicates in command below.
