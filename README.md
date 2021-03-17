@@ -30,7 +30,7 @@ Move the model in the repo, the file faster_rcnn_inception_v2_coco_2018_01_28 to
 >variable: C:\tensorflow\models;C:\tensorflow\models\research;C:\tensorflow\models\research\slim
 
 📣**Way 2:** Set environment in Command Prompt with command below.
->PYTHONPATH=C:\tensorflowapi\models;C:\tensorflowapi\models\research;C:\tensorflowapi\models\research\slim
+>SET PYTHONPATH=C:\tensorflowapi\models;C:\tensorflowapi\models\research;C:\tensorflowapi\models\research\slim
 
 ### 🐾Step 4  
 Run the following commands in the model/research directory.
@@ -64,14 +64,14 @@ Type your classes in the generate_tfrecord.py file as below.
 
 Run the code below in models/research/object_detection directory. 
 
-    python generate_tfrecord.py --csv_input=images\train_labels.csv --image_dir=images\train --output_path=train.record
+    python generate_tfrecord.py --csv_input=images/train_labels.csv --image_dir=images/train --output_path=train.record
 
-    python generate_tfrecord.py --csv_input=images\test_labels.csv --image_dir=images\test --output_path=test.record
+    python generate_tfrecord.py --csv_input=images/test_labels.csv --image_dir=images/test --output_path=test.record
 
 ### 🐾Step 4 : Creating labelmap.pbtxt
 
- - The first thing to do in this step is to move files faster_rcnn_inception_v2_pets.config, graph.pbtxt into models / research / object_detection / training directory.
- - Then a file named labelmap.pbtxt should be created in models / research / object_detection / training directory.
+ - The first thing to do in this step is to move files faster_rcnn_inception_v2_pets.config, graph.pbtxt into models/research/object_detection/training directory.
+ - Then a file named labelmap.pbtxt should be created in models/research/object_detection/training directory.
 
 ⚠️ **The extension of the labelmap file must be .pbtxt.**
 
@@ -87,6 +87,7 @@ item
 **NOTE** 📝 Before the training models/research/object_detection/training folder must contain faster_rcnn_inception_v2_pets.config, graph.pbtxt, labelmap.pbtxt
 
 ### 🐾Step 5
+Change lines in faster_rcnn_inception_v2_pets.config as below in models/research/object_detection/training directory.
 
  - Line 9:  # write your class count
 ```
