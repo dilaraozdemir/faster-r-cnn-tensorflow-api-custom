@@ -145,6 +145,7 @@ The number of my model, which was formed after the training I did, was "0" as fo
 ### Test Image
 ### 🐾Step 1
 Write the IDLE to your command and you will see screen like in the follow.
+
 ![image](/images/idle.jpg)
 
 ### 🐾Step 2
