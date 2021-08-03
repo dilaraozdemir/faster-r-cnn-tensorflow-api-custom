@@ -175,3 +175,5 @@ Press F5 to Run Module.
  - Süheda Çilek ([@GitHub suhedacilek](https://github.com/suhedacilek))
  - 
 **NOTE** 📝  If there is a problem with the displaying Accuracy metric, you have to set up according to right version of Tensorflow Model file.
+
+**NOTE** 📝 You can reach from ([here](https://dilaraozdemir.medium.com/kendi-veri-k%C3%BCmeniz-ile-tensorflow-object-detection-api-kullanarak-faster-r-cnn-uygulamas%C4%B1-1e6114edf280)) the constructions in Turkish language.
