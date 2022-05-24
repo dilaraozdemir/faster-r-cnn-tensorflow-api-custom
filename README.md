@@ -173,5 +173,5 @@ Press F5 to Run Module.
  - Buse Yaren Tekin ([@GitHub buseyarentekin](https://github.com/buseyarentekin))
  - Elif Meşeci ([@GitHub elifmeseci](https://github.com/elifmeseci))
  - Süheda Çilek ([@GitHub suhedacilek](https://github.com/suhedacilek))
- - 
+ 
 **NOTE** 📝  If there is a problem with the displaying Accuracy metric, you have to set up according to right version of Tensorflow Model file.
