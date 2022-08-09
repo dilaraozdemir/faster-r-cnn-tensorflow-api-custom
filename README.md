@@ -146,7 +146,7 @@ The number of my model, which was formed after the training I did, was "0" as fo
 ### Step 1
 Write the IDLE to your command and you will see screen like in the follow.
 
-![image](/images/idle.jpg)
+![image](/images/idlenew.jpg)
 
 ### Step 2
 Choose File/Open... from the left corner of the idle. Selec the Object_detection_image.py file in directory models/research/object_detection from the screen that opens.
