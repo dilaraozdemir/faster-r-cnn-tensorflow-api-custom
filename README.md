@@ -11,19 +11,19 @@ After cloning this repo, upload from within the requirements.txt file.
     
 ## 📌Directory
 
-### 🐾Step 1
+### Step 1
 Download the Tensorflow model file from the link below. We will do the work in this directory. Upload this repo as .zip and unzipped into the directory where you will be working.
 
 [https://github.com/tensorflow/models](https://github.com/tensorflow/models)
 
 **NOTE** 📝 Change the name of the file you unzipped to models.
 
-### 🐾Step 2
+### Step 2
 Move the model in the repo, the file faster_rcnn_inception_v2_coco_2018_01_28 to the models/research/object_detection directory.
 
 **NOTE** 📝 To find the missing files in the object_detection directory, move the missing files models/research/object_detection like in the object_detection.rar 
 
-### 🐾Step 3
+### Step 3
 📣**Way 1:** Specify pythonpathi in system environment variables. And create new system variable 
 >variable name: PYTHONPATH
 >
@@ -32,7 +32,7 @@ Move the model in the repo, the file faster_rcnn_inception_v2_coco_2018_01_28 to
 📣**Way 2:** Set environment in Command Prompt with command below.
 >SET PYTHONPATH=C:\tensorflowapi\models;C:\tensorflowapi\models\research;C:\tensorflowapi\models\research\slim
 
-### 🐾Step 4  
+### Step 4  
 Run the following commands in the model/research directory.
 
 **NOTE** 📝 Can be duplicates in command below.
@@ -46,13 +46,13 @@ Move the [setup.py](https://github.com/dilaraozdemir/repo/setup.py)  file under 
 
 ## 📌Dataset Preparing
 Your dataset must be in voc format and each image must have its own tag file (with an .xml extension).
-### 🐾Step 1
+### Step 1
 Move the data you will use as test and train folders to  models/research/object_detection/images directory.
-### 🐾Step 2
+### Step 2
 Run the code below in models/research/object_detection directory. In the images folder, test_labels.csv and train_labels.csv csv files will be created. You can check.
 
     python xml_to_csv.py
-### 🐾Step 3
+### Step 3
 Type your classes in the generate_tfrecord.py file as below.
 
     # TO-DO replace this with label map
@@ -68,7 +68,7 @@ Run the code below in models/research/object_detection directory.
 
     python generate_tfrecord.py --csv_input=images/test_labels.csv --image_dir=images/test --output_path=test.record
 
-### 🐾Step 4 : Creating labelmap.pbtxt
+### Step 4 : Creating labelmap.pbtxt
 
  - The first thing to do in this step is to move files faster_rcnn_inception_v2_pets.config, graph.pbtxt into models/research/object_detection/training directory.
  - Then a file named labelmap.pbtxt should be created in models/research/object_detection/training directory.
@@ -86,7 +86,7 @@ item
 **NOTE** 📝  id = return values, name = name of your class in generate_tfrecord.py
 **NOTE** 📝 Before the training models/research/object_detection/training folder must contain faster_rcnn_inception_v2_pets.config, graph.pbtxt, labelmap.pbtxt
 
-### 🐾Step 5
+### Step 5
 Change lines in faster_rcnn_inception_v2_pets.config as below in models/research/object_detection/training directory.
 
  - Line 9:  # write your class count
@@ -143,15 +143,15 @@ The number of my model, which was formed after the training I did, was "0" as fo
 ![image](/images/inference_graph.jpg)
 
 ### Test Image
-### 🐾Step 1
+### Step 1
 Write the IDLE to your command and you will see screen like in the follow.
 
 ![image](/images/idle.jpg)
 
-### 🐾Step 2
+### Step 2
 Choose File/Open... from the left corner of the idle. Selec the Object_detection_image.py file in directory models/research/object_detection from the screen that opens.
 
-### 🐾Step 3
+### Step 3
 There are two options here. You can set the path of the test folder in the object_detection_image.py file, or you can move the image you want to test to the models/research / object_detection directory.
 
 **Hint** 🗝️ Here, the operations are carried out by moving the desired image to the test models / research / object_detection directory.
@@ -162,7 +162,7 @@ Write the number of classes the object detector can identify.
 
     NUM_CLASSES = 1
 
-### 🐾Step 4
+### Step 4
 Press F5 to Run Module.
 
 
