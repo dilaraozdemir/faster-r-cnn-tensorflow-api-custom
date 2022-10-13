@@ -120,7 +120,7 @@ input_path: "C:/tensorflowapi/models/research/object_detection/test.record"
 label_map_path: "C:/tensorflowapi/models/research/object_detection/training/labelmap.pbtxt"
 ```
 
-## 📌Training
+## Training
 ⚠️ **Before the training models/research/object_detection/inference_graph folder must be empty.**
 
 For starting to train, run the command below in models/research/object_detection directory.
@@ -131,7 +131,7 @@ It will show like the following image.
 
 ![image](/images/training.jpg)
 
-## 📌Testing
+## Testing
 ### Inference Graph
 ⚠️ **Write the number of the last model.ckpt model created in the inference_graph directory in the XXXX part of the command.**
 
