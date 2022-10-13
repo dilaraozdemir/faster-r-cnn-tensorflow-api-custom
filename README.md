@@ -11,7 +11,7 @@ After cloning this repo, upload from within the requirements.txt file.
     
 ## 📌Directory
 
-### 🐾Step 1
+### Step 1
 Download the Tensorflow model file from the link below. We will do the work in this directory. Upload this repo as .zip and unzipped into the directory where you will be working.
 
 [https://github.com/tensorflow/models](https://github.com/tensorflow/models)
