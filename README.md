@@ -143,15 +143,15 @@ The number of my model, which was formed after the training I did, was "0" as fo
 ![image](/images/inference_graph.jpg)
 
 ### Test Image
-### 🐾Step 1
+### Step 1
 Write the IDLE to your command and you will see screen like in the follow.
 
 ![image](/images/idlenew.jpg)
 
-### 🐾Step 2
+### Step 2
 Choose File/Open... from the left corner of the idle. Selec the Object_detection_image.py file in directory models/research/object_detection from the screen that opens.
 
-### 🐾Step 3
+### Step 3
 There are two options here. You can set the path of the test folder in the object_detection_image.py file, or you can move the image you want to test to the models/research / object_detection directory.
 
 **Hint** 🗝️ Here, the operations are carried out by moving the desired image to the test models / research / object_detection directory.
@@ -162,7 +162,7 @@ Write the number of classes the object detector can identify.
 
     NUM_CLASSES = 1
 
-### 🐾Step 4
+### Step 4
 Press F5 to Run Module.
 
 
