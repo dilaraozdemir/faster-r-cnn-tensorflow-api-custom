@@ -52,7 +52,7 @@ Move the data you will use as test and train folders to  models/research/object_
 Run the code below in models/research/object_detection directory. In the images folder, test_labels.csv and train_labels.csv csv files will be created. You can check.
 
     python xml_to_csv.py
-### 🐾Step 3
+### Step 3
 Type your classes in the generate_tfrecord.py file as below.
 
     # TO-DO replace this with label map
@@ -68,7 +68,7 @@ Run the code below in models/research/object_detection directory.
 
     python generate_tfrecord.py --csv_input=images/test_labels.csv --image_dir=images/test --output_path=test.record
 
-### 🐾Step 4 : Creating labelmap.pbtxt
+### Step 4 : Creating labelmap.pbtxt
 
  - The first thing to do in this step is to move files faster_rcnn_inception_v2_pets.config, graph.pbtxt into models/research/object_detection/training directory.
  - Then a file named labelmap.pbtxt should be created in models/research/object_detection/training directory.
@@ -86,7 +86,7 @@ item
 **NOTE** 📝  id = return values, name = name of your class in generate_tfrecord.py
 **NOTE** 📝 Before the training models/research/object_detection/training folder must contain faster_rcnn_inception_v2_pets.config, graph.pbtxt, labelmap.pbtxt
 
-### 🐾Step 5
+### Step 5
 Change lines in faster_rcnn_inception_v2_pets.config as below in models/research/object_detection/training directory.
 
  - Line 9:  # write your class count
