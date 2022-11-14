@@ -5,7 +5,7 @@
 	conda install tensorflow-gpu==1.15.0
 	conda install -c anaconda protobuf
 	
-After cloning this repo, upload requirements from the requirements.txt file.
+After cloning this repo, upload requirement versions from the requirements.txt file.
 
     pip install -r requirements.txt
     
